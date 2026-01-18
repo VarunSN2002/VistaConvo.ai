@@ -87,38 +87,39 @@ Users can:
    ```bash
    cp .env.example .env
   Fill in:
-  MONGO_URI=your-mongodb-connection-string
-  JWT_SECRET=your-jwt-secret-at-least-32-chars
+  - MONGO_URI=your-mongodb-connection-string
+  - JWT_SECRET=your-jwt-secret-at-least-32-chars
   # One of the following, or none if using mock responses:
-  OPENAI_API_KEY=sk-proj-...
-  OPENROUTER_API_KEY=sk-or-v1-...
+  - OPENAI_API_KEY=sk-proj-...
+  - OPENROUTER_API_KEY=sk-or-v1-...
 3. Run the backend in dev mode
-   npm run dev
-   API available at http://localhost:5000/api.
+   1. npm run dev
+
+  API available at http://localhost:5000/api.
 
 ## Frontend Setup
 
 1. Install dependencies
-   cd frontend
-   npm install
-2. Create environment file cp .env.example .env
-   VITE_API_URL=http://localhost:5000/api
+   1. cd frontend
+   2. npm install
+2. Create environment file - cp .env.example .env
+   - VITE_API_URL=http://localhost:5000/api
 3. Run the frontend - npm run dev
 
 
 ## How to use
 
-Start backend (npm run dev in /backend)
+- Start backend (npm run dev in /backend)
 
-Start frontend (npm run dev in /frontend)
+- Start frontend (npm run dev in /frontend)
 
-Browser flow:
+# Browser flow:
 
-  Register → Login → Dashboard
+  - Register → Login → Dashboard
 
-  Create project → Click project card
+  - Create project → Click project card
 
-  Chat with AI (streaming responses)
+  - Chat with AI (streaming responses)
 
   ⚙️ Settings to edit prompts
 4. 
